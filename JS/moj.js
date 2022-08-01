@@ -25,3 +25,12 @@ const showMenu = () => {
 
 burgermenu.addEventListener('click', showMenu)
 keyclose.addEventListener('click', showMenu)
+
+
+const footeryear = document.querySelector('.footeryear')
+const handleYear = () => {
+    const year = (new Date).getFullYear()
+    footeryear.innerText = year
+}
+
+handleYear()
